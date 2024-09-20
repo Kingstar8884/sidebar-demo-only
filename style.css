@@ -108,11 +108,6 @@ header nav ul li a:hover {
     }
 }
 
-@media (max-width: 500px){
-    .sideBar {
-        width: 100%;
-    }
-}
 
 @media (min-width: 650px){
     .sideBar {
