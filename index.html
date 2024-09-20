@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sideBar">
+                <li onclick="toggleBar(false)"> <a> ❌ </a> </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">StarkNilX</a></li>
+                <li class="none"><a href="#">Home</a></li>
+                <li class="none"><a href="#">Docs</a></li>
+                <li class="none"><a href="#">Features</a></li>
+                <li class="none"><a href="#">Support</a></li>
+                <li class="none"><a href="#">Contact</a></li>
+                <li onclick="toggleBar(true)" id="burger">
+                    <span></span><span></span><span></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleBar(tt){
+            if (tt){
+                document.getElementsByClassName('sideBar')[0].style.display = 'block';
+            }else if (!tt){
+                document.getElementsByClassName('sideBar')[0].style.display = 'none';
+            }else{
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
